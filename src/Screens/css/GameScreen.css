@@ -1,0 +1,10 @@
+
+.dice > div > button > img {
+    width: 300px;
+}
+
+.dice > div > button {
+    background: none;   
+    border: none;
+    padding: 5%;
+}

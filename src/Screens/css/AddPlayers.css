@@ -1,0 +1,36 @@
+.App {
+    background-color: #132E4D;
+    color: white;
+    height: 45em;
+  }
+
+  .dice-image {
+    color: #132E4D;
+    width: 70%;
+  }
+  .row3 {
+    position: relative;
+    top: 5%;
+  }
+  .back-button {
+      background-color: #4081EC;
+      border: none;
+  }
+  .add-player-section {
+      font-size: 20px;
+  }
+  .input-player-name {
+      color: black;
+  }
+ .add-player-button {
+     background-color: #4081EC;
+     border: none;
+ }
+#playerOneWarning , #playerTwoWarning {
+color: red;
+}
+ .play-button {
+     background-color: #4081EC;
+     border: none;
+     font-size: 20px;
+ }

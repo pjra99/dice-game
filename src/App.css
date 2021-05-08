@@ -1,0 +1,21 @@
+.App {
+  background-color: #132E4D;
+  color: white;
+  height: 45em;
+}
+
+.dice-image {
+  color: #132E4D;
+  width: 70%;
+}
+.row3 {
+  position: relative;
+  top: 5%;
+}
+.start-button {
+  background: none;
+  border: 2px solid white;
+  position: relative;
+  top: 5%;
+  padding-bottom: 10px;
+}
