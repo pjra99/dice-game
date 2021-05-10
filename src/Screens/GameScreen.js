@@ -6,7 +6,6 @@ import four from './images/four.png'
 import five from './images/five.png'
 import six from './images/six.png'
 import React, {useState, useEffect} from 'react'
-import RulesScreen from './RulesScreen.js'
 import './css/GameScreen.css'
 import {Link, useHistory} from "react-router-dom"
 
@@ -16,8 +15,8 @@ function GameScreen (props){
     
     const history = useHistory();
 
-    const [index1, setIndex1] = useState(0);
-    const [index2, setIndex2] = useState(0);
+    const [index1, setIndex1] = useState(Math.floor(Math.random() * 6));
+    const [index2, setIndex2] = useState(Math.floor(Math.random() * 6));
     
     const playerOne = history.location.state.player1
     const playerTwo = history.location.state.player2
@@ -31,7 +30,7 @@ function GameScreen (props){
     const [roundScore2, setRoundScore2] = useState(0)
     
     function handleClick1(){
-         
+
         const message = document.getElementById('displayMessage')
         message.innerHTML= ""
 
@@ -54,14 +53,9 @@ function GameScreen (props){
         }
         setRoundScore1(roundScore1+i+1)
         setTurn(turn+1)
-        
-        var dice = document.getElementById('dice1')
-        dice.style.transform= 'rotate(360deg)'
-        dice.style.transition= '2s'
-
-
+    
     }
-
+ 
     useEffect(()=>{
         const message = document.getElementById('displayMessage')
         if(totalScore1>=winningScore){
@@ -97,9 +91,6 @@ function GameScreen (props){
         }
         setRoundScore2(roundScore2+i+1)
         setTurn(turn+1)
-        var dice = document.getElementById('dice2')
-        dice.style.transform= 'rotate(360deg)'
-        dice.style.transition= '2s'
 
     }
 

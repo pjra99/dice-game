@@ -7,6 +7,8 @@
 }
 .game-screen-header {
     margin-bottom: 3%;
+   background-color:  #312c51;
+   padding: 2% 2%;
 }
 .dice > div > button > img {
     width: 300px;
@@ -29,4 +31,13 @@
 }
 .nested-row-right-scores {
     height: 11em;
+}
+#dice1:active {
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+#dice2:active {
+    transform: rotate(360deg);
+    transition: .5s;
 }

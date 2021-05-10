@@ -30,4 +30,6 @@ color: white;
 .set-score-section {
     height: 9em;
 }
-
+.start-playing {
+    color:#4081EC;
+}
