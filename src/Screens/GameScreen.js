@@ -36,7 +36,7 @@ function GameScreen (props){
         message.innerHTML= ""
 
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
-            totalScore1>totalScore2?message.innerHTML="Player 1 won": message.innerHTML="Player 2 won";
+            totalScore1>totalScore2?message.innerHTML=`${playerOne} has Won!`: message.innerHTML=`${playerTwo} has Won!`;
             
             return false;
         }
@@ -80,7 +80,7 @@ function GameScreen (props){
         const message = document.getElementById('displayMessage')
         message.innerHTML=""
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
-            totalScore1>totalScore2?message.innerHTML="Player 1 won": message.innerHTML="Player 2 won";
+            totalScore1>totalScore2?message.innerHTML=`${playerOne} has Won!`: message.innerHTML=`${playerTwo} has Won!`;
             return false;
         }
         if(flag2==1){
