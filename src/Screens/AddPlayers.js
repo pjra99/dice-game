@@ -4,8 +4,11 @@ import React, {useState} from 'react'
 import GameScreen from './RulesScreen.js'
 import App from '../App';
 import RulesScreen from './RulesScreen.js';
+import {Link, useHistory} from 'react-router-dom'
 
 function AddPlayers(){
+
+ const history = useHistory();
 
     const [firstPlayer, setFirstPlayer] = useState("");
     const [secondPlayer, setSecondPlayer] = useState("");
@@ -29,13 +32,21 @@ function AddPlayers(){
         if(secondPlayer==""){
             q.innerHTML="Add Player 2!"
             return false; 
-        }
-           
-
-        ReactDOM.render(<RulesScreen player1={firstPlayer} player2={secondPlayer} />, document.getElementById('root'))
+        }  
+        history.push({ pathname:'/rulesscreen',
+            state: {
+                player1: firstPlayer, player2: secondPlayer
+            }
+        })
     }
     return(
         <div className="App container-fluid">
+
+         <div className="row add-players-header">
+     <div className="col-md-4"></div>
+   <div className="col-md-5"><h1> Welcome to the Dice Game</h1></div>
+   <div className="col-md-3"></div>
+   </div>
             <div className="row row2">
    <div className="col-md-4"></div>
    <div className="col-md-6"><img className="dice-image" src="https://www.youcubed.org/wp-content/uploads/2020/03/shutterstock_1140911045.png" /></div>
@@ -43,8 +54,7 @@ function AddPlayers(){
    </div>
    <div className="row row3">
        <div className="col-md-2"></div>
-       <div className="col-md-1"><button className="back-button" onClick={()=>ReactDOM.render(<App />, document.getElementById('root'))
-}>back</button></div>
+       <div className="col-md-1"><Link to="/"><button className="back-button">Back</button></Link></div>
    <div className="col-md-3 add-player-section add-player1">
        <input type="text" className="input-player-name" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />
         <p id="playerOneWarning"></p>
@@ -54,7 +64,8 @@ function AddPlayers(){
         <p id="playerTwoWarning"></p>
         </div>
    <div className="col-md-1 play-button-section">
-       <button  onClick={handleSubmit}className="play-button">Play</button>
+
+     <button onClick={handleSubmit} className="play-button">Play</button>
        </div>
    <div className="col-md-2"></div>
         </div>

@@ -8,13 +8,18 @@
     color: #132E4D;
     width: 70%;
   }
-  .row3 {
+  .add-players-header{
+      margin-bottom: 2%;
+      background-color: #312c51;
+  }
+  .row3 {   
     position: relative;
     top: 5%;
   }
   .back-button {
-      background-color: #4081EC;
-      border: none;
+     color: #4081EC;
+      /* color: white; */
+      /* border: none; */
   }
   .add-player-section {
       font-size: 20px;
@@ -33,4 +38,5 @@ color: red;
      background-color: #4081EC;
      border: none;
      font-size: 20px;
+     border-radius: 3px;
  }

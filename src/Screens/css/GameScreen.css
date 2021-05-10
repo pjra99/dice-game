@@ -1,10 +1,30 @@
-
+.game-screen {
+    color: white;
+}
+#displayMessage {
+    font-size: 30px;
+    color: #ff4646;
+}
+.game-screen-header {
+    margin-bottom: 3%;
+}
 .dice > div > button > img {
     width: 300px;
+    border-radius: 12%;
 }
 
 .dice > div > button {
     background: none;   
     border: none;
     padding: 5%;
+}
+.winning-score {
+    padding-left: 5%;
+}
+.hold-button, .reset-button {
+    color:#4081EC;
+}
+
+.nested-row-right-scores {
+    height: 11em;
 }
