@@ -20,18 +20,19 @@ function GameScreen (){
     const [totalScore2, setTotalScore2] = useState(0)
     const [roundScore1, setRoundScore1] = useState(0)
     const [roundScore2, setRoundScore2] = useState(0)
+
+    const [message, setMessage]= useState("")
     
     function handleClick1(){
 
-        const message = document.getElementById('displayMessage')
-        message.innerHTML= ""
+        setMessage("")
 
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
-            totalScore1>totalScore2?message.innerHTML=`${playerOne} has Won!`: message.innerHTML=`${playerTwo} has Won!`;
+            totalScore1>totalScore2?setMessage(`${playerOne} has Won!`): setMessage(`${playerTwo} has Won!`);
             return false;
         }
         if(flag1==1){
-            message.innerHTML= `It's ${playerTwo}'s turn`
+           setMessage(`It's ${playerTwo}'s turn`)
             return false
         }
         var i = Math.floor(Math.random() * 6)
@@ -47,28 +48,26 @@ function GameScreen (){
     }
 
     useEffect(()=>{
-        const message = document.getElementById('displayMessage')
+        
         if(totalScore1>=winningScore){
-           message.innerHTML=`${playerOne} has won!`
+          setMessage(`${playerOne} has Won!`)
         }
     }, [totalScore1])
 
     useEffect(()=>{
-        const message = document.getElementById('displayMessage')
         if(totalScore2>=winningScore){
-            message.innerHTML=`${playerTwo} has won!`
+            setMessage(`${playerTwo} has Won!`)
         }
     }, [totalScore2])
 
     function handleClick2(){
-        const message = document.getElementById('displayMessage')
-        message.innerHTML=""
+        setMessage("")
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
-            totalScore1>totalScore2?message.innerHTML=`${playerOne} has Won!`: message.innerHTML=`${playerTwo} has Won!`;
+            totalScore1>totalScore2? setMessage(`${playerOne} has Won!`): setMessage(`${playerTwo} has Won!`);
             return false;
         }
         if(flag2==1){
-            message.innerHTML= `It's ${playerOne}'s turn`
+            setMessage(`It's ${playerOne}'s turn`)
             return false;
         }
         var i = Math.floor(Math.random() * 6)
@@ -111,7 +110,7 @@ function GameScreen (){
     return (
         <div className="container-fluid game-screen">
             <div className="row game-screen-header">
-                <div className="col-md-4"> 
+                <div className="col-md-1"> 
     
                  <button onClick={()=> history.push({
                      pathname: '/rulesscreen',
@@ -122,15 +121,15 @@ function GameScreen (){
                  })}className="back-to-rules-button">
                          back</button>
                          </div>
-                <div className="col-md-6"><p id="displayMessage"></p></div>
-                <div className="col-md-2"></div>
+                <div className="col-md-10"><p id="displayMessage">{message}</p></div>
+                <div className="col-md-1"></div>
             </div>
             <div className="row row2">
                 <div className="col-md-1"> </div>
                 <div className="col-md-4 dice"> 
                 <div className="row nested-row-left-player-name">
                      <div className="col-md-2"></div>
-            <div className="col-md-5">  {playerOne}'s dice</div>
+            <div className="col-md-5">  <span className="player-names">{playerOne}'s</span> dice</div>
             <div className="col-md-5"></div>
             </div>
                 <div className="row nested-row-left-dice">
@@ -159,7 +158,7 @@ function GameScreen (){
                                             setTotalScore2(0)
                                             setRoundScore1(0)
                                             setRoundScore2(0)
-                                            message.innerHTML=""
+                                            setMessage("")
                                           
                                         }}>Reset Game</button>
     </div>
@@ -167,7 +166,7 @@ function GameScreen (){
         <div className="col-md-4 dice">
         <div className="row nested-row-right-player-name">
             <div className="col-md-2"></div>
-            <div className="col-md-4">  {playerTwo}'s dice</div>
+            <div className="col-md-4"><span className="player-names">{playerTwo}'s</span> dice</div>
             <div className="col-md-6"></div>
             </div>
        <div className="row nested-row-right-dice">

@@ -10,17 +10,18 @@ function RulesScreen() {
     const [winningScore, setWinningScore]= useState(0)
     const playerOne = history.location.state.player1
     const playerTwo = history.location.state.player2
-
+    const [warning, setWarning] = useState("")
+    
     console.log(history)
 
     function handleClick(){
- 
-        var p3 = document.getElementById('warning3')
- 
+          
         if(winningScore==0){
-            p3.innerHTML="Please add the Winning Score."
+            setWarning("Please add the Winning Score!")
             return false
         }
+
+            setWarning("")
         console.log(history)
        history.push({pathname: '/gamescreen',
                     state: {
@@ -30,19 +31,13 @@ function RulesScreen() {
                     }    
                 })
     }
-    const warningStyle={
-        color: 'red'
-    }
     return (
         <div className="container-fluid welcome-screen">
         <div className="row rules-screen-header">
-            <div className="col-md-4"><Link to="/addplayers"><button className="back-to-add-players">Back</button></Link></div>
-            <div className="col-md-5 greet-players">
-                Hi: <span style={{
-                    color:'#fff600'
-                }}>{playerOne}</span> & <span style={{
-                    color:'#fff600'
-                }}>{playerTwo}  </span> 
+            <div className="col-md-3"><Link to="/addplayers"><button className="back-to-add-players">Back</button></Link></div>
+            <div className="col-md-6 greet-players">
+                Hi:&nbsp; <span className="player-names" >{playerOne}</span>&nbsp;&&nbsp;<span className="player-names">
+                    {playerTwo}  </span> 
             </div>
             <div className="col-md-3"></div>
         </div>
@@ -61,14 +56,13 @@ function RulesScreen() {
             <div className="col-md-2"></div>
             </div>
             <div className="row set-score-section">
-                <div className="col-md-3">
+                <div className="col-md-4">
                     </div>
-                <div className="col-md-1"></div>
-                <div className="col-md-2"><input type="number" onChange={(e)=>setWinningScore(e.target.value)} className="input-winning-score" placeholder="Set a Winning Score" />
-                <p id="warning3" style={warningStyle}>
+                <div className="col-md-3 set-score"><input type="number" onChange={(e)=>setWinningScore(e.target.value)} className="input-winning-score" placeholder="Set a Winning Score" /> <br />
+                <p id="warning">
+                    {warning}
                     </p>
                     </div>
-                    <div className="col-md-1"></div>
                 <div onClick={handleClick} className="col-md-2"><button className="start-playing">Start Playing</button></div>
                 <div className="col-md-5"></div>
             </div>

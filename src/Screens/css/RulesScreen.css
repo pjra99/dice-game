@@ -12,9 +12,12 @@
     font-size: 12px;
 }
 .greet-players {
-    margin-left: 5%;
+display: flex;
+justify-content: center;
 }
-
+.player-names {
+    color: #fff600;
+}
 .rules-section {
     color: white;
 }
@@ -34,8 +37,12 @@ color: white;
 .set-score-section {
     height: 9em;
 } 
-.input-winning-score {
-    margin-left: 30%;
+.set-score {
+    padding-left: 5%;
+}
+
+#warning {
+    color: red;
 }
 .start-playing {
     color:#4081EC;
