@@ -1,12 +1,9 @@
-import GameScreen from './GameScreen.js'
-import ReactDOM from 'react-dom'
 import { useState } from 'react';
 import React from 'react';
-import AddPlayers from './AddPlayers.js';
-import {Link, useHistory, useLocation } from "react-router-dom"
+import {Link, useHistory } from "react-router-dom"
 import './css/RulesScreen.css'
 
-function RulesScreen(props) {
+function RulesScreen() {
 
     const history = useHistory();
    

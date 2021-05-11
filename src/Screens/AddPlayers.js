@@ -1,9 +1,6 @@
 import './css/AddPlayers.css'
-import ReactDOM from 'react-dom'
+import img from './images/dice-image.png'
 import React, {useState} from 'react'
-import GameScreen from './RulesScreen.js'
-import App from '../App';
-import RulesScreen from './RulesScreen.js';
 import {Link, useHistory} from 'react-router-dom'
 
 function AddPlayers(){
@@ -49,18 +46,18 @@ function AddPlayers(){
    </div>
             <div className="row row2">
    <div className="col-md-4"></div>
-   <div className="col-md-6"><img className="dice-image" src="https://www.youcubed.org/wp-content/uploads/2020/03/shutterstock_1140911045.png" /></div>
+   <div className="col-md-6"><img className="dice-image" src={img} /></div>
    <div className="col-md-2"></div>
    </div>
    <div className="row row3">
        <div className="col-md-2"></div>
        <div className="col-md-1"><Link to="/"><button className="back-button">Back</button></Link></div>
    <div className="col-md-3 add-player-section add-player1">
-       <input type="text" className="input-player-name" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />
+       <input type="text" value={firstPlayer} className="input-player-name" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />
         <p id="playerOneWarning"></p>
         </div>
    <div className="col-md-3 add-player-section add-player2">
-       <input type="text" className="input-player-name" onChange={(e)=>setSecondPlayer(e.target.value)} placeholder="Add Player 2" />
+       <input type="text" value={secondPlayer} className="input-player-name" onChange={(e)=>setSecondPlayer(e.target.value)} placeholder="Add Player 2" />
         <p id="playerTwoWarning"></p>
         </div>
    <div className="col-md-1 play-button-section">

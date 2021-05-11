@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom"
 import one from './images/one.png'
 import two from './images/two.png'
 import three from './images/three.png'
@@ -7,11 +6,9 @@ import five from './images/five.png'
 import six from './images/six.png'
 import React, {useState, useEffect} from 'react'
 import './css/GameScreen.css'
-import {Link, useHistory} from "react-router-dom"
+import {useHistory} from "react-router-dom"
 
-
-function GameScreen (props){
-    
+function GameScreen (){
     
     const history = useHistory();
 
@@ -21,6 +18,7 @@ function GameScreen (props){
     const playerOne = history.location.state.player1
     const playerTwo = history.location.state.player2
     const winningScore = history.location.state.winningScore
+
     const [turn, setTurn] = useState(1)
     const [flag1, setFlag1] = useState(0)
     const [flag2, setFlag2] = useState(0)
@@ -36,7 +34,6 @@ function GameScreen (props){
 
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
             totalScore1>totalScore2?message.innerHTML=`${playerOne} has Won!`: message.innerHTML=`${playerTwo} has Won!`;
-            
             return false;
         }
         if(flag1==1){
@@ -53,9 +50,8 @@ function GameScreen (props){
         }
         setRoundScore1(roundScore1+i+1)
         setTurn(turn+1)
-    
     }
- 
+
     useEffect(()=>{
         const message = document.getElementById('displayMessage')
         if(totalScore1>=winningScore){
@@ -136,8 +132,8 @@ function GameScreen (props){
                 <div className="col-md-2"></div>
             </div>
             <div className="row row2">
-                <div className="col-md-2"> </div>
-                <div className="col-md-3 dice"> 
+                <div className="col-md-1"> </div>
+                <div className="col-md-4 dice"> 
                 <div className="row nested-row-left-player-name">
                      <div className="col-md-2"></div>
             <div className="col-md-5">  {playerOne}'s dice</div>

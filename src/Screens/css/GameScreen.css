@@ -11,28 +11,27 @@
    padding: 2% 2%;
 }
 .dice > div > button > img {
-    width: 300px;
     border-radius: 12%;
+    width: 78%;
 }
-
 .dice > div > button {
     background: none;   
     border: none;
     padding: 5%;
 }
 .winning-score {
-    padding-left: 5%;
+    padding-left: 3%;
 }
 .hold-button, .reset-button {
     color:#4081EC;
 }
 .reset-button  {
-    margin-left: 10%;
+    margin: 3% 0% 0% 10%;
 }
 .nested-row-right-scores {
     height: 11em;
 }
-#dice1:active {
+/* #dice1:active {
     transform: rotate(360deg);
     transition: .5s;
 }
@@ -40,4 +39,4 @@
 #dice2:active {
     transform: rotate(360deg);
     transition: .5s;
-}
+} */

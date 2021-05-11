@@ -1,6 +1,7 @@
-import ReactDOM from "react-dom"
 import './css/Welcome.css'
-import {BrowserRouter as Router, Link, Switch, Route, useHistory} from 'react-router-dom'
+import img from './dice-image.png'
+import {Link} from 'react-router-dom'
+
 function Welcome() {
 
   return (
@@ -12,7 +13,7 @@ function Welcome() {
    </div>
    <div className="row row2">
    <div className="col-md-4"></div>
-   <div className="col-md-6"><img className="dice-image" src="https://www.youcubed.org/wp-content/uploads/2020/03/shutterstock_1140911045.png" /></div>
+   <div className="col-md-6"><img className="dice-image" src={img} /></div>
    <div className="col-md-2"></div>
    </div>
    <div className="row row3">

@@ -3,6 +3,9 @@
   color: white;
   height: 45em;
 }
+.container-fluid {
+  font-family: 'Itim', cursive;
+}
  .welcome-screen-header {
    margin-bottom: 2%;
    background-color: #312c51;
