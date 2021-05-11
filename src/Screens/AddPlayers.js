@@ -1,5 +1,4 @@
 import './css/AddPlayers.css'
-import img from './images/dice-image.png'
 import React, {useState} from 'react'
 import {Link, useHistory} from 'react-router-dom'
 
@@ -46,7 +45,7 @@ function AddPlayers(){
    </div>
             <div className="row row2">
    <div className="col-md-4"></div>
-   <div className="col-md-6"><img className="dice-image" src={img} /></div>
+   <div className="col-md-6"><img className="dice-image" src="./dice-image.png" /></div>
    <div className="col-md-2"></div>
    </div>
    <div className="row row3">

@@ -1,9 +1,3 @@
-import one from './images/one.png'
-import two from './images/two.png'
-import three from './images/three.png'
-import four from './images/four.png'
-import five from './images/five.png'
-import six from './images/six.png'
 import React, {useState, useEffect} from 'react'
 import './css/GameScreen.css'
 import {useHistory} from "react-router-dom"
@@ -106,12 +100,12 @@ function GameScreen (){
         setFlag1(0)
         }
     var ar = [
-        one, 
-        two, 
-        three, 
-        four, 
-        five, 
-        six
+        "./one.png", 
+        "./two.png", 
+        "./three.png", 
+        "./four.png", 
+        "./five.png", 
+        "./six.png"
     ]
 
     return (
