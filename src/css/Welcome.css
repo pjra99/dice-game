@@ -1,7 +1,7 @@
 .App {
   background-color: #132E4D;
   color: white;
-  height: 45em;
+  height: 100vh;
 }
 .container-fluid {
   font-family: 'Itim', cursive;
@@ -9,6 +9,10 @@
  .welcome-screen-header {
    margin-bottom: 2%;
    background-color: #312c51;
+ }
+ .welcome-screen-title {
+   display: flex;
+   justify-content: center;
  }
 .dice-image {
   color: #132E4D;
@@ -19,8 +23,16 @@
   position: relative;
   top: 5%;
 }
+.welcome-img-section {
+  display: flex;
+  justify-content: center;
+}
+.welcome-screen-button-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
 .start-button {
-  margin-left: 7%;
   padding: 15px 25px;
   font-size: 24px;
   text-align: center;

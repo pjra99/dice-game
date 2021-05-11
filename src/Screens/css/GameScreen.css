@@ -37,14 +37,5 @@
     margin: 3% 0% 0% 10%;
 }
 .nested-row-right-scores {
-    height: 11em;
+    height: 7em;
 }
-/* #dice1:active {
-    transform: rotate(360deg);
-    transition: .5s;
-}
-
-#dice2:active {
-    transform: rotate(360deg);
-    transition: .5s;
-} */
