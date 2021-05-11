@@ -20,6 +20,10 @@ function RulesScreen() {
             setWarning("Please add the Winning Score!")
             return false
         }
+        if(winningScore<0){
+            setWarning("Please add a valid Winning Score!")
+            return false;
+        }
 
             setWarning("")
         console.log(history)

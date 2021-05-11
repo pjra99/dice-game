@@ -95,6 +95,7 @@ function GameScreen (){
     setRoundScore1(0)
     setFlag1(1)
     setFlag2(0)
+    document.documentElement.scrollTop = 0;
 
     }
     function handleHoldClick2(){
@@ -103,6 +104,7 @@ function GameScreen (){
         setRoundScore2(0)
         setFlag2(1)
         setFlag1(0)
+        document.documentElement.scrollTop = 0;
         }
     var ar = [
         "./one.png", 
