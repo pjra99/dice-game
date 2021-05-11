@@ -9,24 +9,25 @@ function AddPlayers(){
     const [firstPlayer, setFirstPlayer] = useState("");
     const [secondPlayer, setSecondPlayer] = useState("");
 
-    function handleSubmit(){
-        var p = document.getElementById('playerOneWarning');
-        var q = document.getElementById('playerTwoWarning');
+    const [warning1, setWarning1] = useState("");
+    const [warning2, setWarning2] = useState("");
 
-        p.innerHTML="";
-        q.innerHTML="";
+    function handleSubmit(){
+ 
+        setWarning1("")
+        setWarning2("")
 
         if(firstPlayer=="" && secondPlayer==""){
-            p.innerHTML="Add Player 1!"
-            q.innerHTML="Add Player 2!"
+           setWarning1("Add Player 1!")
+           setWarning2("Add Player 2!")
             return false;
         }
         if(firstPlayer==""){
-            p.innerHTML="Add Player 1!"
+            setWarning1("Add Player 1!")
             return false;
         }
         if(secondPlayer==""){
-            q.innerHTML="Add Player 2!"
+            setWarning2("Add Player 2!")
             return false; 
         }  
         history.push({ pathname:'/rulesscreen',
@@ -44,20 +45,20 @@ function AddPlayers(){
    <div className="col-md-3"></div>
    </div>
             <div className="row row2">
-   <div className="col-md-4"></div>
-   <div className="col-md-6"><img className="dice-image" src="./dice-image.png" /></div>
-   <div className="col-md-2"></div>
+   <div className="col-md-3"></div>
+   <div className="col-md-6 img-section"><img className="dice-image" src="./dice-image.png" /></div>
+   <div className="col-md-3"></div>
    </div>
    <div className="row row3">
-       <div className="col-md-2"></div>
-       <div className="col-md-1"></div>
+       <div className="col-md-3"></div>
+
    <div className="col-md-3 add-player-section add-player1">
        <input type="text" value={firstPlayer} className="input-player-name inp-1" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />
-        <p id="playerOneWarning"></p>
+        <p id="playerOneWarning">{warning1}</p>
         </div>
    <div className="col-md-3 add-player-section add-player2">
        <input type="text" value={secondPlayer} className="input-player-name inp-2" onChange={(e)=>setSecondPlayer(e.target.value)} placeholder="Add Player 2" />
-        <p id="playerTwoWarning"></p>
+        <p id="playerTwoWarning">{warning2}</p>
         </div>
    <div className="col-md-1 play-button-section">
 
