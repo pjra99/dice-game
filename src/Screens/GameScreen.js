@@ -28,10 +28,12 @@ function GameScreen (){
         setMessage("")
 
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
-            totalScore1>totalScore2?setMessage(`${playerOne} has Won!`): setMessage(`${playerTwo} has Won!`);
+            document.documentElement.scrollTop = 0;       
+         totalScore1>totalScore2?setMessage(`${playerOne} has Won!`): setMessage(`${playerTwo} has Won!`);
             return false;
         }
         if(flag1==1){
+            document.documentElement.scrollTop = 0;
            setMessage(`It's ${playerTwo}'s turn`)
             return false
         }
@@ -50,23 +52,27 @@ function GameScreen (){
     useEffect(()=>{
         
         if(totalScore1>=winningScore){
+            document.documentElement.scrollTop = 0;
           setMessage(`${playerOne} has Won!`)
         }
     }, [totalScore1])
 
     useEffect(()=>{
         if(totalScore2>=winningScore){
-            setMessage(`${playerTwo} has Won!`)
+            document.documentElement.scrollTop = 0;
+           setMessage(`${playerTwo} has Won!`)
         }
     }, [totalScore2])
 
     function handleClick2(){
         setMessage("")
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
-            totalScore1>totalScore2? setMessage(`${playerOne} has Won!`): setMessage(`${playerTwo} has Won!`);
+            document.documentElement.scrollTop = 0;
+             totalScore1>totalScore2? setMessage(`${playerOne} has Won!`): setMessage(`${playerTwo} has Won!`);
             return false;
         }
         if(flag2==1){
+            document.documentElement.scrollTop = 0;
             setMessage(`It's ${playerOne}'s turn`)
             return false;
         }
