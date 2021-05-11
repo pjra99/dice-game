@@ -36,8 +36,8 @@ function RulesScreen() {
     return (
         <div className="container-fluid welcome-screen">
         <div className="row rules-screen-header">
-            <div className="col-md-5"><Link to="/addplayers"><button className="back-to-add-players">Back</button></Link></div>
-            <div className="col-md-4 greet-players">
+            <div className="col-md-4"><Link to="/addplayers"><button className="back-to-add-players">Back</button></Link></div>
+            <div className="col-md-5 greet-players">
                 Hi: <span style={{
                     color:'#fff600'
                 }}>{playerOne}</span> & <span style={{
@@ -47,8 +47,8 @@ function RulesScreen() {
             <div className="col-md-3"></div>
         </div>
         <div className="row row2">
-     <div className="col-md-5"></div>
-     <div className="col-md-4 rule-list-title">Rules Of The Game</div>
+     <div className="col-md-4"></div>
+     <div className="col-md-5 rule-list-title">Rules Of The Game</div>
      <div className="col-md-3"></div>
         </div>
         <div className="row rules-section">
@@ -64,12 +64,13 @@ function RulesScreen() {
                 <div className="col-md-3">
                     </div>
                 <div className="col-md-1"></div>
-                <div className="col-md-3"><input type="number" onChange={(e)=>setWinningScore(e.target.value)} className="input-winning-score" placeholder="Set a Winning Score" />
+                <div className="col-md-2"><input type="number" onChange={(e)=>setWinningScore(e.target.value)} className="input-winning-score" placeholder="Set a Winning Score" />
                 <p id="warning3" style={warningStyle}>
                     </p>
                     </div>
+                    <div className="col-md-1"></div>
                 <div onClick={handleClick} className="col-md-2"><button className="start-playing">Start Playing</button></div>
-                <div className="col-md-3"></div>
+                <div className="col-md-5"></div>
             </div>
         </div>
     )

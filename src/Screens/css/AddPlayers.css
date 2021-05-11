@@ -18,12 +18,21 @@
   }
   .back-button {
      color: #4081EC;
+     margin-top: 5%;
   }
   .add-player-section {
       font-size: 20px;
   }
   .input-player-name {
       color: black;
+      border-radius: 3px;
+      border: none;
+  }
+  .inp-1 {
+      margin-left: 15%;
+  }
+  .inp-2 {
+      margin-left: 10%;
   }
  .add-player-button {
      background-color: #4081EC;

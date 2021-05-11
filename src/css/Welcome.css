@@ -20,9 +20,17 @@
   top: 5%;
 }
 .start-button {
-  background: none;
-  border: 2px solid white;
-  color: white;
-  margin-left: 5%;
-  font-size: 30px;
+  margin-left: 7%;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #511281;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #21094e;
 }
+
+.start-button:hover {background-color: #3f3697}

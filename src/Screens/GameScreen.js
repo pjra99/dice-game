@@ -111,7 +111,7 @@ function GameScreen (){
     return (
         <div className="container-fluid game-screen">
             <div className="row game-screen-header">
-                <div className="col-md-5"> 
+                <div className="col-md-4"> 
     
                  <button onClick={()=> history.push({
                      pathname: '/rulesscreen',
@@ -119,7 +119,7 @@ function GameScreen (){
                          player1: playerOne,
                          player2: playerTwo
                      }
-                 })}className="back-button">
+                 })}className="back-to-rules-button">
                          back</button>
                          </div>
                 <div className="col-md-6"><p id="displayMessage"></p></div>

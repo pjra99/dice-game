@@ -11,24 +11,31 @@
 .back-to-add-players {
     font-size: 12px;
 }
+.greet-players {
+    margin-left: 5%;
+}
 
 .rules-section {
-    height: 25em;
     color: white;
 }
 .rule-list-title {
-font-size: 20px;
+    margin-left: 5%;
+font-size: 30px;
 color: white;
 }
 .rule-list {
-    margin: 4% 4%;
+    margin: 3% 4%;
     font-size: 15px;
 }
 .rule-list > p {
+    font-size: 18px;
     margin: 2% 2%;
 }
 .set-score-section {
     height: 9em;
+} 
+.input-winning-score {
+    margin-left: 30%;
 }
 .start-playing {
     color:#4081EC;

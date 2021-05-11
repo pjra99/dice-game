@@ -39,7 +39,7 @@ function AddPlayers(){
         <div className="App container-fluid">
 
          <div className="row add-players-header">
-     <div className="col-md-4"></div>
+     <div className="col-md-4"><Link to="/"><button className="back-button">Back</button></Link></div>
    <div className="col-md-5"><h1> Welcome to the Dice Game</h1></div>
    <div className="col-md-3"></div>
    </div>
@@ -50,13 +50,13 @@ function AddPlayers(){
    </div>
    <div className="row row3">
        <div className="col-md-2"></div>
-       <div className="col-md-1"><Link to="/"><button className="back-button">Back</button></Link></div>
+       <div className="col-md-1"></div>
    <div className="col-md-3 add-player-section add-player1">
-       <input type="text" value={firstPlayer} className="input-player-name" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />
+       <input type="text" value={firstPlayer} className="input-player-name inp-1" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />
         <p id="playerOneWarning"></p>
         </div>
    <div className="col-md-3 add-player-section add-player2">
-       <input type="text" value={secondPlayer} className="input-player-name" onChange={(e)=>setSecondPlayer(e.target.value)} placeholder="Add Player 2" />
+       <input type="text" value={secondPlayer} className="input-player-name inp-2" onChange={(e)=>setSecondPlayer(e.target.value)} placeholder="Add Player 2" />
         <p id="playerTwoWarning"></p>
         </div>
    <div className="col-md-1 play-button-section">
