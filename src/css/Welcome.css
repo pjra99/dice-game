@@ -20,9 +20,9 @@
   width: 65%;
   margin-left: 4%;
 }
-.welcome-screen-middle {
+.welcome-screen-bottom {
   position: relative;
-  top: 5%;
+  top: 3.5%;
 }
 .welcome-img-section {
   display: flex;
@@ -31,7 +31,6 @@
 .welcome-screen-button-section {
   display: flex;
   justify-content: center;
-  margin-top: -17px;
 }
 .start-button {
   padding: 15px 25px;
