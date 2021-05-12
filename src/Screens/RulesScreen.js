@@ -52,11 +52,12 @@ function RulesScreen() {
         </div>
         <div className="row rules-screen-middle-bottom">
             <div className="col-md-2"></div>
-            <div className="col-md-8 rules-list"> <p>- The game has 2 players, playing in rounds.</p>
-            <p>- The first player can choose to 'Hold' their ROUND score in between the turns, which means that their ROUND score gets added to their TOTAL score. After that, its the next player's turn</p>
-          <p>- A player rolls a dice as many times as they wish. Each result gets added to their ROUND score. Meanwhile other player waits for their turn.</p>
+            <div className="col-md-8 rules-list"> 
+            <p>- The game has 2 players, playing in rounds. Players can simply Tap on the device to roll it.</p>
+            <p>- A player rolls a dice as many times as they wish. Each result gets added to their ROUND score. Meanwhile other player waits for their turn.</p>
+            <p>- The player can choose to 'Hold' their ROUND score in between the turns, which means that their ROUND score gets added to their TOTAL score. After that, its the next player's turn.</p>
           <p>- If the player gets a '1' on the dice, all their ROUND score gets lost. After that, its the next player's turn.</p>
-          <p>- The first player to reach WINNING score on TOTAL score wins the game</p></div>
+          <p>- The first player to reach or exceed the WINNING score on TOTAL score wins the game.</p></div>
             <div className="col-md-2"></div>
             </div>
             <div className="row set-score-section">
