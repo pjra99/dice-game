@@ -1,8 +1,8 @@
-.App {
-    background-color: #132E4D;
-    color: white;
-    height: 45em;
-  }
+.addplayers-screen {
+  background-color: #132E4D;
+  height: 100vh;
+  overflow: hidden;
+}
 .img-section {
     display: flex;
     justify-content: center;
@@ -12,6 +12,7 @@
     width: 70%;
   }
   .add-players-header{
+    color: white;
       margin-bottom: 2%;
       background-color: #312c51;
   }
@@ -25,25 +26,32 @@
   }
   .add-player-section {
       font-size: 20px;
+      display: flex;
+      justify-content: center;
   }
   .input-player-name {
       color: black;
       border-radius: 3px;
       border: none;
+      margin: 1%;
   }
 
  .add-player-button {
      background-color: #4081EC;
      border: none;
-     display: flex;
-     justify-content: center;
  }
 #playerOneWarning , #playerTwoWarning {
 color: red;
 }
+.play-button-section {
+  display: flex;
+  justify-content: center;
+}
  .play-button {
+   color: white;
      background-color: #4081EC;
      border: none;
      font-size: 20px;
      border-radius: 3px;
+     margin:2%;
  }

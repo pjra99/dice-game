@@ -36,7 +36,7 @@ function RulesScreen() {
                 })
     }
     return (
-        <div className="container-fluid welcome-screen">
+        <div className="container-fluid rules-screen">
         <div className="row rules-screen-header">
             <div className="col-md-3"><Link to="/addplayers"><button className="back-to-add-players">Back</button></Link></div>
             <div className="col-md-6 greet-players">
@@ -67,8 +67,8 @@ function RulesScreen() {
                     {warning}
                     </p>
                     </div>
-                <div onClick={handleClick} className="col-md-2"><button className="start-playing">Start Playing</button></div>
-                <div className="col-md-5"></div>
+                <div onClick={handleClick} className="col-md-2 start-play-button-section"><button className="start-playing">Start Playing</button></div>
+                <div className="col-md-4"></div>
             </div>
         </div>
     )

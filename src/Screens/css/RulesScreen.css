@@ -1,5 +1,7 @@
-.container-fluid {
-    background-color:   #132E4D;
+.rules-screen {
+    background-color: #132E4D;
+    height: 100vh;
+    overflow: hidden;
 }
 .rules-screen-header{
     padding: 1% 1%;
@@ -38,12 +40,18 @@ color: white;
     height: 6em;
 } 
 .set-score {
-    padding-left: 5%;
+   display: flex;
+   justify-content: center;
 }
 
 #warning {
     color: red;
 }
+.start-play-button-section{
+    display: flex;
+    justify-content: center;
+}
 .start-playing {
     color:#4081EC;
+    margin-top: 3px;
 }

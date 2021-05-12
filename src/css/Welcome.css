@@ -1,4 +1,4 @@
-.App {
+.welcome-screen {
   background-color: #132E4D;
   color: white;
   height: 100vh;
@@ -30,7 +30,7 @@
 .welcome-screen-button-section {
   display: flex;
   justify-content: center;
-  margin-top: -20px;
+  margin-top: -17px;
 }
 .start-button {
   padding: 15px 25px;
