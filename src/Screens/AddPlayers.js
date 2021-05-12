@@ -50,13 +50,16 @@ function AddPlayers(){
    </div>
    <div className="row row3">
        <div className="col-md-3"></div>
-   <div className="col-md-3 add-player-section add-player1">
-       <input type="text" value={firstPlayer} className="input-player-name inp-1" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />
-        <p id="playerOneWarning">{warning1}</p>
+   <div className="col-md-3 add-player-section">
+       <div>
+   <input type="text" value={firstPlayer} className="input-player-name inp-1" onChange={(e)=>setFirstPlayer(e.target.value)} placeholder="Add Player 1" />  
+   </div>
+        <div className="warning-message">{warning1}</div>
         </div>
-   <div className="col-md-3 add-player-section add-player2">
-       <input type="text" value={secondPlayer} className="input-player-name inp-2" onChange={(e)=>setSecondPlayer(e.target.value)} placeholder="Add Player 2" />
-        <p id="playerTwoWarning">{warning2}</p>
+   <div className="col-md-3 add-player-section">
+       <div><input type="text" value={secondPlayer} className="input-player-name inp-2" onChange={(e)=>setSecondPlayer(e.target.value)} placeholder="Add Player 2" />
+</div>
+        <div className="warning-message">{warning2}</div>
         </div>
    <div className="col-md-1 play-button-section">
 

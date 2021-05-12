@@ -24,11 +24,12 @@
      color: #4081EC;
      margin-top: 5%;
   }
-  .add-player-section {
+  .add-player-section > div {
       font-size: 20px;
       display: flex;
       justify-content: center;
   }
+  
   .input-player-name {
       color: black;
       border-radius: 3px;
@@ -36,13 +37,16 @@
       margin: 1%;
   }
 
+  .warning-message {
+    color:red;
+    display: flex;
+    justify-content: center;
+  }
  .add-player-button {
      background-color: #4081EC;
      border: none;
  }
-#playerOneWarning , #playerTwoWarning {
-color: red;
-}
+
 .play-button-section {
   display: flex;
   justify-content: center;

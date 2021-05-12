@@ -53,19 +53,19 @@ function RulesScreen() {
         <div className="row rules-section">
             <div className="col-md-2"></div>
             <div className="col-md-8 rule-list"> <p>- The game has 2 players, playing in rounds.</p>
-<p>- Within a round, a player rolls a dice as many times as they wish. Each result get added to their ROUND score. Meanwhile other player waits for their turn in this ROUND.</p>
-<p>- If the player rolls a 1 on the dice, all their ROUND score gets lost. After that, it's the next player's turn.</p>
-<p>- The first player can choose to 'Hold' the ROUND score in between turns, which means that thier ROUND score gets added to his TOTAL score. After that, it's again the next player's turn</p>
-<p>- The first player to reach 100 points on GLOBAL score wins the game</p></div>
+            <p>- The first player can choose to 'Hold' their ROUND score in between the turns, which means that their ROUND score gets added to their TOTAL score. After that, its the next player's turn</p>
+          <p>- A player rolls a dice as many times as they wish. Each result gets added to their ROUND score. Meanwhile other player waits for their turn.</p>
+          <p>- If the player gets a '1' on the dice, all their ROUND score gets lost. After that, its the next player's turn.</p>
+          <p>- The first player to reach WINNING score on TOTAL score wins the game</p></div>
             <div className="col-md-2"></div>
             </div>
             <div className="row set-score-section">
                 <div className="col-md-4">
                     </div>
-                <div className="col-md-3 set-score"><input type="number" onChange={(e)=>setWinningScore(e.target.value)} className="input-winning-score" placeholder="Set a Winning Score" /> <br />
-                <p id="warning">
+                <div className="col-md-3"><div className="set-score"><input type="number" onChange={(e)=>setWinningScore(e.target.value)} className="input-winning-score" placeholder="Set a Winning Score" /> </div>
+                <div className="set-score-warning">
                     {warning}
-                    </p>
+                    </div>
                     </div>
                 <div onClick={handleClick} className="col-md-2 start-play-button-section"><button className="start-playing">Start Playing</button></div>
                 <div className="col-md-4"></div>

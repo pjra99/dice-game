@@ -44,8 +44,10 @@ color: white;
    justify-content: center;
 }
 
-#warning {
+.set-score-warning {
     color: red;
+    display: flex;
+    justify-content: center;
 }
 .start-play-button-section{
     display: flex;
