@@ -45,4 +45,6 @@
   box-shadow: 0 9px #21094e;
 }
 
-.start-button:hover {background-color: #3f3697}
+.start-button:hover {
+  background-color: #3f3697;
+}
