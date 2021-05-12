@@ -16,7 +16,12 @@
       margin-bottom: 2%;
       background-color: #312c51;
   }
-  .row3 {   
+  .add-players-header-title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .add-players-bottom{   
     position: relative;
     top: 5%;
   }

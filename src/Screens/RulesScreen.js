@@ -45,14 +45,14 @@ function RulesScreen() {
             </div>
             <div className="col-md-3"></div>
         </div>
-        <div className="row row2">
-     <div className="col-md-4"></div>
-     <div className="col-md-5 rule-list-title">Rules Of The Game</div>
+        <div className="row rules-screen-middle-upper">
+     <div className="col-md-3"></div>
+     <div className="col-md-6 rules-list-title">Rules Of The Game</div>
      <div className="col-md-3"></div>
         </div>
-        <div className="row rules-section">
+        <div className="row rules-screen-middle-bottom">
             <div className="col-md-2"></div>
-            <div className="col-md-8 rule-list"> <p>- The game has 2 players, playing in rounds.</p>
+            <div className="col-md-8 rules-list"> <p>- The game has 2 players, playing in rounds.</p>
             <p>- The first player can choose to 'Hold' their ROUND score in between the turns, which means that their ROUND score gets added to their TOTAL score. After that, its the next player's turn</p>
           <p>- A player rolls a dice as many times as they wish. Each result gets added to their ROUND score. Meanwhile other player waits for their turn.</p>
           <p>- If the player gets a '1' on the dice, all their ROUND score gets lost. After that, its the next player's turn.</p>

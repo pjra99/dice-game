@@ -16,7 +16,7 @@
    background-color:  #312c51;
    padding: 1% 1%;
 }
-.row2 {
+.game-play-section {
     font-size: 18px;
 }
 .dice > div > button > img {
@@ -32,6 +32,7 @@
     padding-left: 2.5%;
 }
 .player-name-for-dice {
+    font-size: 20px;
     display: flex;
     justify-content: center;
 }

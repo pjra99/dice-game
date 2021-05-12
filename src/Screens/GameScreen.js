@@ -143,7 +143,7 @@ function GameScreen (){
                 <div className="col-md-10"><p id="displayMessage">{message}</p></div>
                 <div className="col-md-1"></div>
             </div>
-            <div className="row row2">
+            <div className="row game-play-section">
                 <div className="col-md-1"> </div>
                 <div className="col-md-4 dice"> 
                 <div className="row nested-row-left-player-name">

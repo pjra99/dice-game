@@ -7,15 +7,15 @@ function Welcome() {
     <div className="container-fluid welcome-screen">
    <div className="row welcome-screen-header">
      <div className="col-md-3"></div>
-   <div className="col-md-6 welcome-screen-title"><h1>Welcome to the Dice Game</h1></div>
+   <div className="col-md-6 welcome-screen-title">Welcome to the Dice Game</div>
    <div className="col-md-3"></div>
    </div>
-   <div className="row row2">
+   <div className="row welcome-screen-middle">
    <div className="col-md-3"></div>
    <div className="col-md-6 welcome-img-section"><img className="dice-image" src="./dice-image.png" /></div>
    <div className="col-md-3"></div>
    </div>
-   <div className="row row3">
+   <div className="row welcome-screen-bottom">
    <div className="col-md-4"></div>
    <div className="col-md-4 welcome-screen-button-section"><Link to="/addplayers"><button className="start-button"> Start Playing </button></Link></div>
    <div className="col-md-4"></div>   

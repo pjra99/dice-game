@@ -39,16 +39,16 @@ function AddPlayers(){
     return(
         <div className="container-fluid addplayers-screen">
          <div className="row add-players-header">
-     <div className="col-md-4"><Link to="/"><button className="back-button">Back</button></Link></div>
-   <div className="col-md-5"><h1> Welcome to the Dice Game</h1></div>
+     <div className="col-md-3"><Link to="/"><button className="back-button">Back</button></Link></div>
+   <div className="col-md-6 add-players-header-title">Welcome to the Dice Game</div>
    <div className="col-md-3"></div>
    </div>
-            <div className="row row2">
+            <div className="row add-players-middle">
    <div className="col-md-3"></div>
    <div className="col-md-6 img-section"><img className="dice-image" src="./dice-image.png" /></div>
    <div className="col-md-3"></div>
    </div>
-   <div className="row row3">
+   <div className="row add-players-bottom">
        <div className="col-md-3"></div>
    <div className="col-md-3 add-player-section">
        <div>
