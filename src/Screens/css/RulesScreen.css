@@ -11,7 +11,7 @@
     color: white;
 }
 .back-to-add-players {
-    font-size: 12px;
+    font-size: 13px;
 }
 .greet-players {
 display: flex;
@@ -44,11 +44,15 @@ color: white;
    display: flex;
    justify-content: center;
 }
+.input-winning-score {
+    font-size: 18px;
+}
 
 .set-score-warning {
     color: red;
     display: flex;
     justify-content: center;
+    font-size: 15px;
 }
 .start-play-button-section{
     display: flex;
@@ -56,5 +60,10 @@ color: white;
 }
 .start-playing {
     color:#4081EC;
-    margin-top: 3px;
+}
+@media only screen and (max-width:992px) {
+    .start-playing {
+margin-top: 10px;
+    }
+
 }

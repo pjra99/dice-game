@@ -11,12 +11,10 @@ function RulesScreen() {
     const playerOne = history.location.state.player1
     const playerTwo = history.location.state.player2
     const [warning, setWarning] = useState("")
-    
-    console.log(history)
 
     function handleClick(){
           
-        if(winningScore===0){
+        if(winningScore==="0" ||  winningScore===""){
             setWarning("Please add the Winning Score!")
             return false
         }
@@ -26,7 +24,6 @@ function RulesScreen() {
         }
 
             setWarning("")
-        console.log(history)
        history.push({pathname: '/gamescreen',
                     state: {
                         player1: playerOne,

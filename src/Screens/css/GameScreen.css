@@ -1,3 +1,4 @@
+
 .game-screen {
     background-color: #132E4D;
     color: white;
@@ -54,3 +55,13 @@
     transition: .5s;
 }
 
+@media only screen and (min-width: 992px) {
+    .game-screen {
+      height: 101vh;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .dice > div > button > img {
+        width: 50%;
+    }
+  }

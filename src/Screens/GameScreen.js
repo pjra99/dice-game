@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './css/GameScreen.css'
 import {useHistory} from "react-router-dom"
-// 
 
 function GameScreen (){
     
