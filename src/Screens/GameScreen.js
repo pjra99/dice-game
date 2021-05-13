@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './css/GameScreen.css'
 import {useHistory} from "react-router-dom"
+// 
 
 function GameScreen (){
     
@@ -34,8 +35,8 @@ function GameScreen (){
          document.getElementById("dice2").classList.remove("rotate");
             return false;
         }
-       if(num==1){
-        if(flag1==1){
+       if(num===1){
+        if(flag1===1){
             document.getElementById("dice1").classList.remove("rotate")
             document.getElementById("dice2").classList.add("rotate")
             document.documentElement.scrollTop = 0;
@@ -46,7 +47,7 @@ function GameScreen (){
         document.getElementById("dice2").classList.remove("rotate")
         var i = Math.floor(Math.random() * 6)
         setIndex1(i)
-        if(i==0){
+        if(i===0){
             setRoundScore1(0);
             setFlag1(1)
             setFlag2(0)
@@ -57,7 +58,7 @@ function GameScreen (){
        }
 
        else {    
-        if(flag2==1){
+        if(flag2===1){
             document.getElementById("dice2").classList.remove("rotate")
             document.getElementById("dice1").classList.add("rotate")
 
@@ -68,9 +69,9 @@ function GameScreen (){
             document.getElementById("dice2").classList.add("rotate")
             document.getElementById("dice1").classList.remove("rotate")
          
-            var i = Math.floor(Math.random() * 6)
+            i = Math.floor(Math.random() * 6)
             setIndex2(i)
-            if(i==0){
+            if(i===0){
                 setRoundScore2(0);
                 setFlag1(0)
                 setFlag2(1)
@@ -82,7 +83,7 @@ function GameScreen (){
     }
 
     function handleHoldClick(num){
-  if(num==1){
+  if(num===1){
     document.getElementById("dice1").classList.remove("rotate")
     document.getElementById("dice2").classList.add("rotate")
     setTotalScore1(totalScore1+roundScore1)
@@ -107,14 +108,14 @@ function GameScreen (){
             document.documentElement.scrollTop = 0;
           setMessage(`${playerOne} has Won!`)
         }
-    }, [totalScore1])
+    }, [totalScore1,  winningScore, playerOne])
 
     useEffect(()=>{
         if(totalScore2>=winningScore){
             document.documentElement.scrollTop = 0;
            setMessage(`${playerTwo} has Won!`)
         }
-    }, [totalScore2])
+    }, [totalScore2, winningScore, playerTwo])
 
 
     var ar = [
@@ -153,7 +154,7 @@ function GameScreen (){
             </div>
                 <div className="row nested-row-left-dice">
        <button onMouseDown={()=>handleMouseDown(1)}> 
-             <img id="dice1" src={ar[index1]} />
+             <img id="dice1" src={ar[index1]} alt="dice-one-img" />
        </button>
        </div>
        <div className="row nested-row-left-scores">
@@ -189,7 +190,7 @@ function GameScreen (){
             </div>
        <div className="row nested-row-right-dice">
        <button onMouseDown={()=>handleMouseDown(2)}> 
-             <img id="dice2" src={ar[index2]} />
+             <img id="dice2" src={ar[index2]} alt="dice-two-img" />
        </button>
        </div>
        <div className="row nested-row-right-scores">

@@ -16,7 +16,7 @@ function RulesScreen() {
 
     function handleClick(){
           
-        if(winningScore==0){
+        if(winningScore===0){
             setWarning("Please add the Winning Score!")
             return false
         }

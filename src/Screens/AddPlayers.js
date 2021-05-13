@@ -17,16 +17,16 @@ function AddPlayers(){
         setWarning1("")
         setWarning2("")
 
-        if(firstPlayer=="" && secondPlayer==""){
+        if(firstPlayer==="" && secondPlayer===""){
            setWarning1("Add Player 1!")
            setWarning2("Add Player 2!")
             return false;
         }
-        if(firstPlayer==""){
+        if(firstPlayer===""){
             setWarning1("Add Player 1!")
             return false;
         }
-        if(secondPlayer==""){
+        if(secondPlayer===""){
             setWarning2("Add Player 2!")
             return false; 
         }  
@@ -45,7 +45,7 @@ function AddPlayers(){
    </div>
             <div className="row add-players-middle">
    <div className="col-md-3"></div>
-   <div className="col-md-6 img-section"><img className="dice-image" src="./dice-image.png" /></div>
+   <div className="col-md-6 img-section"><img className="dice-image" src="./dice-image.png" alt="dice-img" /></div>
    <div className="col-md-3"></div>
    </div>
    <div className="row add-players-bottom">

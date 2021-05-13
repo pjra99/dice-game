@@ -12,7 +12,7 @@ function Welcome() {
    </div>
    <div className="row welcome-screen-middle">
    <div className="col-md-3"></div>
-   <div className="col-md-6 welcome-img-section"><img className="dice-image" src="./dice-image.png" /></div>
+   <div className="col-md-6 welcome-img-section"><img className="dice-image" src="./dice-image.png" alt="dice-img" /></div>
    <div className="col-md-3"></div>
    </div>
    <div className="row welcome-screen-bottom">

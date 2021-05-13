@@ -1,5 +1,5 @@
 import AddPlayers from './Screens/AddPlayers.js'
-import {BrowserRouter as Router, Link, Switch, Route} from "react-router-dom"
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import RulesScreen from './Screens/RulesScreen';
 import Welcome from './Welcome.js'
 import GameScreen from './Screens/GameScreen.js'
