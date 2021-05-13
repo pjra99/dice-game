@@ -20,7 +20,7 @@
 .dice-image {
   color: #132E4D;
   width: 65%;
-  margin-left: 4%;
+  border-radius: 2%;
 }
 .welcome-screen-bottom {
   position: relative;
