@@ -9,12 +9,12 @@
  .welcome-screen-header {
    margin-bottom: 2%;
    background-color: #312c51;
+   padding: 1% 1%;
  }
  .welcome-screen-title {
    display: flex;
    justify-content: center;
    font-size: 35px;
-   padding: 1% 1%;
  }
 .dice-image {
   color: #132E4D;
