@@ -195,6 +195,9 @@ function GameScreen (){
             <div className="col-md-6"></div>
             </div>
        <div className="row nested-row-right-dice">
+       <audio id="dice-roll">   
+          <source src="./diceroll.mpeg" type="audio/mpeg"></source>
+      </audio>
        <button onMouseDown={()=>handleMouseDown(2)}> 
              <img id="dice2" src={ar[index2]} alt="dice-two-img" />
        </button>
