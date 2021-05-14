@@ -24,7 +24,7 @@ function GameScreen (){
     const [message, setMessage]= useState("")
     
     function handleMouseDown(num){
-       
+       const audio = document.getElementById("dice-roll");
         setMessage("")
 
         if(totalScore1 >=winningScore || totalScore2 >= winningScore) {
@@ -47,11 +47,13 @@ function GameScreen (){
         var i = Math.floor(Math.random() * 6)
         setIndex1(i)
         if(i===0){
+            audio.play()
             setRoundScore1(0);
             setFlag1(1)
             setFlag2(0)
             return;
         }
+        audio.play()
         setRoundScore1(roundScore1+i+1)
         setTurn(turn+1)
        }
@@ -71,11 +73,13 @@ function GameScreen (){
             i = Math.floor(Math.random() * 6)
             setIndex2(i)
             if(i===0){
+                audio.play()
                 setRoundScore2(0);
                 setFlag1(0)
                 setFlag2(1)
                 return
             }
+            audio.play()
             setRoundScore2(roundScore2+i+1)
             setTurn(turn+1)
        }
@@ -152,8 +156,11 @@ function GameScreen (){
             <div className="col-md-5"></div>
             </div>
                 <div className="row nested-row-left-dice">
+          
        <button onMouseDown={()=>handleMouseDown(1)}> 
+   
              <img id="dice1" src={ar[index1]} alt="dice-one-img" />
+        
        </button>
        </div>
        <div className="row nested-row-left-scores">
