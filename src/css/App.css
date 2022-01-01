@@ -1,0 +1,283 @@
+.welcome-screen {
+  background-color: #132e4d;
+  color: white;
+  height: 102vh;
+}
+.container-fluid {
+  font-family: "Itim", cursive;
+}
+.welcome-screen-header {
+  background-color: #312c51;
+  padding: 1% 1%;
+  height: 75px;
+}
+.welcome-screen-title,
+.add-players-header-title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.dice-image {
+  color: #132e4d;
+  width: 65%;
+  border-radius: 2%;
+}
+.welcome-screen-bottom {
+  position: relative;
+  top: 4%;
+}
+.welcome-img-section {
+  display: flex;
+  justify-content: center;
+}
+.welcome-screen-button-section {
+  display: flex;
+  justify-content: center;
+}
+.start-button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #511281;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #21094e;
+}
+
+.start-button:hover {
+  background-color: #3f3697;
+}
+
+@media only screen and (max-width: 1024px) {
+  .welcome-screen-middle {
+    padding-top: 18%;
+  }
+}
+
+.addplayers-screen {
+  background-color: #132e4d;
+  height: 101vh;
+  overflow: hidden;
+}
+.img-section {
+  display: flex;
+  justify-content: center;
+}
+
+.add-players-header {
+  color: white;
+  margin-bottom: 2%;
+  background-color: #312c51;
+  padding: 1% 1%;
+  height: 75px;
+}
+
+.add-players-bottom {
+  position: relative;
+  top: 4%;
+}
+.back-button {
+  color: #4081ec;
+  margin-top: 10%;
+}
+.add-player-section > div {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-player-name {
+  color: black;
+  border-radius: 3px;
+  border: none;
+  margin: 1%;
+}
+
+.warning-message {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+.add-player-button {
+  background-color: #4081ec;
+  border: none;
+}
+
+.play-button-section {
+  display: flex;
+  justify-content: center;
+}
+.play-button,
+.back-button,
+.start-playing {
+  color: white;
+  background-color: #4081ec;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  margin: 2%;
+}
+.back-button {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .add-players-middle {
+    padding-top: 18%;
+  }
+}
+
+.game-screen {
+  background-color: #132e4d;
+  color: white;
+}
+#displayMessage {
+  font-size: 30px;
+  color: #fff600;
+  display: flex;
+  justify-content: center;
+}
+.back-to-rules-button {
+  color: #4081ec;
+}
+.game-screen-header {
+  margin-bottom: 3%;
+  background-color: #312c51;
+  padding: 1% 1%;
+}
+.game-play-section {
+  font-size: 18px;
+}
+.dice > div > button > img {
+  border-radius: 12%;
+  width: 76%;
+}
+.dice > div > button {
+  background: none;
+  border: none;
+  padding: 5%;
+}
+.winning-score {
+  padding-left: 2.5%;
+}
+.player-name-for-dice {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.player-1,
+.player-2 {
+  margin-top: 5%;
+}
+.hold-button,
+.reset-button {
+  color: #4081ec;
+}
+.reset-button {
+  margin: 3% 0% 0% 10%;
+}
+.nested-row-right-scores {
+  height: 7em;
+}
+
+.rotate:active {
+  transform: rotate(720deg);
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 992px) {
+  .game-screen {
+    height: 101vh;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .add-players-header {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dice > div > button > img {
+    width: 50%;
+  }
+}
+
+.rules-screen {
+  background-color: #132e4d;
+  height: 100vh;
+  overflow: hidden;
+}
+.rules-screen-header {
+  padding: 1% 1%;
+  font-size: 20px;
+  margin-bottom: 2%;
+  background-color: #312c51;
+  color: white;
+  height: 75px;
+}
+.back-to-add-players {
+  font-size: 13px;
+}
+.greet-players {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.player-names {
+  color: #fff600;
+}
+.rules-screen-middle-bottom {
+  color: white;
+}
+.rules-list-title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+.rules-list {
+  margin: 3% 4%;
+  font-size: 15px;
+}
+.rules-list > p {
+  font-size: 18px;
+  margin: 2% 2%;
+}
+.set-score-section {
+  height: 6em;
+}
+.set-score {
+  display: flex;
+  justify-content: center;
+}
+.input-winning-score {
+  font-size: 18px;
+}
+
+.set-score-warning {
+  color: red;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+.start-play-button-section {
+  display: flex;
+  justify-content: center;
+}
+.start-playing {
+  /* color: #4081ec; */
+  margin-top: -1px;
+}
+@media only screen and (max-width: 992px) {
+  .start-playing {
+    margin-top: 10px;
+  }
+  .rules-screen-header {
+    height: 120px;
+  }
+}
