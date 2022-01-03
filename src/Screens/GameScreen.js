@@ -140,9 +140,9 @@ function GameScreen() {
                 },
               })
             }
-            className="back-to-rules-button"
+            className="back-to-rules-button back-button"
           >
-            back
+            Back
           </button>
         </div>
         <div className="col-md-10">

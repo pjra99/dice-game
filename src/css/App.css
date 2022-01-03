@@ -10,6 +10,7 @@
   background-color: #312c51;
   padding: 1% 1%;
   height: 75px;
+  margin-bottom: 1%;
 }
 .welcome-screen-title,
 .add-players-header-title {
@@ -142,9 +143,7 @@
   display: flex;
   justify-content: center;
 }
-.back-to-rules-button {
-  color: #4081ec;
-}
+
 .game-screen-header {
   margin-bottom: 3%;
   background-color: #312c51;
