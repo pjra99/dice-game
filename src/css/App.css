@@ -198,6 +198,15 @@
   .add-players-header {
     height: 120px;
   }
+  /* .game-screen {
+    height: 101vh;
+  } */
+
+}
+@media only screen and (max-height: 686px){
+  .game-screen {
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
