@@ -6,7 +6,7 @@ Dice game is a simple multiplayer dice-game in which two players can use the sam
 Also, if someone wants to create its backend in such a way that two players can play their chances on their own device, feel free to contibute to the project; you can read contirbuting.md for the same.
 
 ## Technologies used -
-React.js
+React.js, Bootstrap
 
 
 ## Images
